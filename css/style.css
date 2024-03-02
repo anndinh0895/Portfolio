@@ -1,0 +1,580 @@
+h1 {
+    font-family: 'Shrikhand';
+    font-size: 36px;
+    color: #42383C;
+    letter-spacing: 4px;
+    line-height: 1px; 
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-weight: normal;
+    color: #42383C;
+    line-height: 1px; 
+}
+
+h3 {
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    color: #42383c;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+a {
+    color: #42383c;
+}
+
+a:hover {
+    color: #FCB9B2;
+    text-decoration: none;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+li {
+    background-image: url('../images/3.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin: 0px;
+	list-style: none;
+    padding: 16px 0 16px 44px;
+    background-position: left center;
+  }
+
+/* index css */
+
+.button {
+    width: 100px;
+    height: 32px;
+    color: #42383C;
+    font-family: 'B612 Mono', monospace;
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    border: none;
+}
+
+.button1 {
+    background-color: #FCB9B2;
+}
+
+.button1:hover {
+    background-color: #F4CBC6; 
+}
+
+/* home css */
+.scallop1 {
+    position: relative;
+    background: #FFEDEC;
+    font-size: 16px; 
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+    height: 90%;
+}
+
+.scallop1 grid {
+    width: 60%;
+    top: 70px;
+    left: 20%;
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'image right right right'
+    'tagline tagline tagline tagline';
+    gap: 10px;
+}
+
+.scallop1 grid1 {
+    grid-area: image;
+    justify-content: center;
+}
+
+.scallop1 grid2 {
+    grid-area: right;
+}
+
+.scallop1 grid3 {
+    grid-area: tagline;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+
+.scallop1::before { 
+    position:absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+.scallop1::after { 
+    position:absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    font-family: 'B612 Mono', monospace;
+    font-size: 12px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+/* Portfolio Grid Version 1 (Image on right) */
+.PortGrid {
+    width: 60%;
+    top: 70px;
+    left: 20%;
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'title title title title title'
+    'tag tag tag tag tag'
+    'about about about app app';
+    gap: 0px 10px;
+    justify-content: center;
+}
+
+.PortGrid1 {
+    grid-area: title;
+    text-align: center;
+}
+
+.PortGrid2 {
+    grid-area: tag;
+    text-align: center;
+}
+
+.PortGrid3 {
+    grid-area: about;
+    font-size: 11px;
+}
+
+.PortGrid4 {
+    grid-area: app;
+}
+
+/* Portfolio Grid Version 2 (Image on Left) */
+.PortLeftGrid {
+    width: 60%;
+    top: 70px;
+    left: 20%;
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'title1 title1 title1 title1 title1'
+    'tag1 tag1 tag1 tag1 tag1'
+    'app1  about1 about1 about1 about1';
+    gap: 0px 10px;
+    justify-content: center;
+}
+
+.PortLeftGrid1 {
+    grid-area: title1;
+    text-align: center;
+}
+
+.PortLeftGrid2 {
+    grid-area: tag1;
+    text-align: center;
+}
+
+.PortLeftGrid3 {
+    grid-area: app1;
+}
+
+.PortLeftGrid4 {
+    grid-area: about1;
+    font-size: 11px;
+}
+
+/* Portfolio Grid Version 3 (Centered) */
+.PortCenterGrid {
+    width: 60%;
+    top: 20px;
+    left: 20%;
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'title2 title2 title2 title2'
+    'tag2 tag2 tag2 tag2'
+    'about2 about2 about2 about2'
+    'app2 app2 app2 app2';
+    gap: 0px 10px;
+    justify-content: center;
+    font-family: 'B612 Mono', monospace;
+    font-size: 12px;
+}
+
+.PortCenterGrid1 {
+    grid-area: title2;
+    text-align: center;
+}
+
+.PortCenterGrid2 {
+    grid-area: tag2;
+    text-align: center;
+}
+
+.PortCenterGrid3 {
+    grid-area: about2;
+    font-size: 11px;
+    text-align: left;
+}
+
+.PortCenterGrid4 {
+    grid-area: app2;
+}
+
+/* Testimonial Grid */
+
+.testGrid {
+    width: 60%;
+    left: 20%;
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'image1 image1 image2 image2 image3 image3'
+    'name1 name1 name2 name2 name3 name3'
+    'desc1 desc1 desc2 desc2 desc3 desc3';
+    gap: 5px 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.testGrid1 {
+    grid-area: image1;
+}
+
+.testGrid2 {
+    grid-area: image2;
+}
+
+.testGrid3 {
+    grid-area: image3;
+}
+
+.testGrid4 {
+    grid-area: name1;
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    color: #42383c;
+    letter-spacing: 4px;
+}
+
+.testGrid5 {
+    grid-area: name2;
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    color: #42383c;
+    letter-spacing: 4px;
+}
+
+.testGrid6 {
+    grid-area: name3;
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    color: #42383c;
+    letter-spacing: 4px;
+}
+
+.testGrid7 {
+    grid-area: desc1;
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+}
+
+.testGrid8 {
+    grid-area: desc2;
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+}
+
+.testGrid9 {
+    grid-area: desc3;
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+}
+
+/* Resume Grid */
+.resumeGrid {
+    width: 700px;
+    left: 20%;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+    'sectheader borders borders borders borders'
+    'skill1 skill1 more more more'
+    'exp exp exp exp exp';
+    gap: 5px 80px;
+    text-align: left;
+    justify-content:space-evenly;
+}
+
+.resumeGrid1 {
+    grid-area: sectheader;
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    color: #42383c;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.resumeGrid2 {
+    grid-area: borders;
+}
+
+.resumeGrid3 {
+    grid-area: skill1;
+    font-family: 'Bebas Neue';
+    font-size: 12px;
+    color: #42383c;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.resumeGrid4 {
+    grid-area: more;
+    font-size: 11px; 
+    font-family: 'B612 Mono', monospace;
+    color: #42383c;
+    text-align: right;
+}
+
+.resumeGrid5 {
+    grid-area: exp;
+    font-size: 11px;
+    font-family: 'B612 Mono', monospace;
+    color: #42383c;
+}
+
+/* Bottom scallop bg */
+.scallop2 {
+    position: relative;
+    background: #FFEDEC;
+}
+
+.scallop2 p {
+    position: relative;
+    text-align: center;
+    color: #42383C;
+    font-size: 10px; 
+    font-family: 'B612 Mono', monospace;
+    padding: 50px;
+    top: 10px;
+}
+
+.scallop2::before { 
+    position:absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+
+.after-scallop {
+    background: #fff;
+    padding:50px;
+    margin-bottom:50px;
+    text-align:center;
+}
+  
+.after-scallop p {
+    color:#42383C;
+    font-size: 14px; 
+    font-family: 'B612 Mono', monospace;
+    text-align:center;
+    margin-top:30px;
+    font-weight: bold;
+}
+
+.nav {
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #42383C;
+    display: flex;
+    justify-content: center;
+}
+
+.nav img {
+    position: relative;
+    top: 20px;
+}
+
+
+.nav a {
+    color: #42383c;
+    text-decoration: none;
+    margin-inline: 2rem;
+}
+
+.nav a:hover {
+    color: #FCB9B2;
+    text-shadow: 0px 2px 2px #808080;
+    text-decoration: none;
+}
+
+/* Second Scallop for Design */
+
+.scallop3 {
+    position: relative;
+    background: #FFEDEC;
+    font-size: 16px; 
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+    height: 900px;
+}
+
+.scallop3::before { 
+    position:absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+.scallop3::after { 
+    position:absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+/* Third Scallop for Slightly Smaller */
+
+.scallop4 {
+    position: relative;
+    background: #FFEDEC;
+    font-size: 16px; 
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+    height: 790px;
+}
+
+.scallop4::before { 
+    position:absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+.scallop4::after { 
+    position:absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+/* Third Scallop for Longer Post */
+
+.scallop5 {
+    position: relative;
+    background: #FFEDEC;
+    font-size: 16px; 
+    font-family: 'B612 Mono', monospace;
+    color: #42383C;
+    height: 1580px;
+}
+
+.scallop5::before { 
+    position:absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
+.scallop5::after { 
+    position:absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: 
+    radial-gradient(circle at 50% 0%, #FFEDEC 25%, #fff 26%, #fff 40%);
+    background-color: #FFEDEC;
+    background-size:50px 100px;
+    height:50px;
+    background-repeat: repeat-x;
+}
+
